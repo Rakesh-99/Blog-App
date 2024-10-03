@@ -22,33 +22,42 @@ This is a full-featured blog application built using the MERN stack (MongoDB, Ex
 - **State Management**: Redux Toolkit
 - **Authentication**: JSON Web Tokens (JWT)
 
-
 ## Screenshots :
 
 ### Home page
 
-![Home page](./client/src/assets/blogScreenshots/homepage.png)
+![Home page](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/homepage.png?raw=true)
+
+
+### Blog Details page 
+
+![Blog details img1](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/blogdetails1.png?raw=true)
+
+![Blog details img2](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/blogdetails2.png?raw=true)
 
 ### Signup
 
-![Signup](./client/src/assets/blogScreenshots/signup.png)
+![Signup](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/signup.png?raw=true)
 
 ### Signin
 
-![Signin](./client/src/assets/blogScreenshots/signin.png)
+![Signin](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/signin.png?raw=true)
 
-### Admin panel 
-![Admin panel - Blog List](./client/src/assets/blogScreenshots/adminPanelBlogList.png)
-![Admin panel - Comments](./client/src/assets/blogScreenshots/allComments.png)
-![Admin panel - User List](./client/src/assets/blogScreenshots/allUserList.png)
+### Admin panel
 
-### Comment 
-![Comment](./client/src/assets/blogScreenshots/comment.png)
+![Admin panel - Blog List](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/adminPanelBlogList.png?raw=true)
+
+![Admin panel - Comments](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/allComments.png?raw=true)
+
+![Admin panel - User List](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/allUserList.png?raw=true)
+
+### Comment
+
+![Comment](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/comment.png?raw=true)
 
 ### Profile update
-![Profile update](./client/src/assets/blogScreenshots/updateProfile.png)
 
-
+![Profile update](https://github.com/Rakesh-99/fullstack-blog-app/blob/master/client/src/assests/blogScreenshots/comment.png?raw=true)
 
 ## Getting Started
 
