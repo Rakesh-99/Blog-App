@@ -106,28 +106,41 @@ const Home = () => {
             </span>
 
             :
-            <div className="flex flex-wrap px-5 w-full my-10 gap-4 justify-center">
-              {
-                recentBlogs && recentBlogs.map((value, index) => {
-                  return (
-                    <div key={index} className={`shadow-md duration-300 border hover:scale-[99%]  transition-all w-96 rounded-tl-xl rounded-br-xl pb-5 cursor-pointer ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`}>
-                      <Link to={`/blog/${value.slug}`}>
-                        <img src={value.blogImgFile} className='hover:scale-[99%] duration-300  transition-all w-96 h-60 rounded-tl-xl rounded-br-xl' />
+            // <div className="flex md:items-start lg:items-start items-center flex-wrap gap-5  ">
+            //   {
+            //     recentBlogs && recentBlogs.map((value, index) => {
+            //       return (
+            //         <div key={index} className={`w-full pb-2 flex border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`}>
+            //           <Link to={`/blog/${value.slug}`}>
+            //             <img src={value.blogImgFile} className='hover:scale-[99%] duration-300 object-cover  transition-all w-72  rounded-tl-md rounded-br-md' />
 
-                        <div className="px-3">
-                          <p className='text-lg md:text-xl'>{value.blogTitle}</p>
-                          <span className='text-xs md:text-sm w-20 text-center border px-4 rounded-full'>{value.blogCategory}</span>
-                        </div>
-                      </Link>
-                    </div>
+            //             <div className="px-3">
+            //               <p className='text-lg md:text-xl'>{value.blogTitle}</p>
+            //               <span className='text-xs md:text-sm w-20 text-center border px-4 rounded-full'>{value.blogCategory}</span>
+            //             </div>
+            //           </Link>
+            //         </div>
+            //       )
+            //     })
+            //   }
+            // </div>
+
+
+            <div className={`grid lg:grid-cols-3 xl:grid-cols-4  md:grid-cols-2 grid-cols-1  gap-4    ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'} `}>
+              {
+                recentBlogs && recentBlogs.map((val, idx) => {
+                  return (
+                    <Link to={`/blog/${val.slug}`} className={`w-72 border pb-1 place-self-center  rounded-md   ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`} key={idx}>
+                      <img src={val.blogImgFile} alt="blog image" className='w-full h-40 rounded-sm object-cover' />
+                      <h1 className='md:text-base lg:text-lg text-sm mx-2 font-[500]'>{val.blogTitle}</h1>
+                      <p className='text-sm border inline mx-2  px-3 rounded-full text-left '>{val.blogCategory}</p>
+                    </Link>
                   )
                 })
               }
             </div>
+
         }
-
-
-
       </div >
     </>
   )

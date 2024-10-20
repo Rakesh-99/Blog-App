@@ -128,24 +128,30 @@ const ShowBlog = () => {
                                     {/* Recent Blog card  */}
 
 
-                                    <h1 className='text-2xl text-center my-10 '>Recent blogs</h1>
+                                    <h1 className='text-2xl text-center'>Recent blogs</h1>
 
-                                    <div className="grid gap-5 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 md:gap-2">
-                                        {
-                                            limitBlogs && limitBlogs.map((value, index) => {
-                                                return (
-                                                    <RecentBlog key={index} blogs={value} />
-                                                )
-                                            })
-
-                                        }
-                                    </div>
 
                                 </div>
                             </div>
                         }
                     </>
                 }
+
+
+
+                <div className="gap-5  justify-center grid md:grid-cols-2 lg:grid-cols-3 md:w-[80%] lg:-[70%] w-[90%] m-auto">
+                    {
+                        limitBlogs && limitBlogs.map((value, index) => {
+                            return (
+                                <div className="flex">
+                                    <RecentBlog key={index} blogs={value} />
+                                </div>
+                            )
+                        })
+
+                    }
+                </div>
+
             </div >
         </>
     )
